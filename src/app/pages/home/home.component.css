@@ -1,5 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 main {
     background-color: #efefef;
-    width: 100%;
+    width: 80%;
     height: 100vh;
+    padding: 60px 20px 0px 20px;
+    position: relative;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+#photo-principal {
+    width: 40%;
+    border-radius: 15px;
 }
