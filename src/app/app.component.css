@@ -1,6 +1,4 @@
-main {}
-
-
+/* ---------------- Head Page (background image - logo gif - title) ---------------- */
 header {
     background-image: url('/back_header.png');
     background-position: center;
@@ -8,19 +6,25 @@ header {
     background-size: cover;
     width: 100%;
     height: 170px;
-    display: flex; /* Utilisation de flexbox */
     flex-direction: column;
-    justify-content: center; /* Centrage horizontal */
-    align-items: center;     /* Centrage vertical */
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
+
+
+/* ----DISPLAY FLEX---- */
+header, nav, ul, #social-links {
+    display: flex;
+}
+
 
 #logo {
     width: 90px;
     height: 90px;
     position: relative;
-    margin: 0;
 }
+
 
 #logo img {
     width: 100%;
@@ -29,16 +33,19 @@ header {
     left: 0;
 }
 
+
 h1, h3 {
     color: linear-gradient(to right, red, blue);
     mix-blend-mode: overlay;
     margin: 0;
 }
 
+
 h3 {
     font-size: 16px;
     font-weight: 600;
 }
+
 
 nav {
     background-color: #194871;
@@ -46,18 +53,22 @@ nav {
     height: 40px;
     color: #efefef;
     margin-top: 1px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 }
 
+
 ul {
     font-size: 15px;
     list-style: none;
-    display: flex;
     padding: 0;
     margin-right: 20px;
+}
+
+
+li, .img-contact, #title-nav, #img-social img {
+    transition: .2s;
 }
 
 
@@ -68,8 +79,8 @@ li {
     padding: 5px;
     text-align: center;
     cursor: pointer;
-    transition: .3s;
 }
+
 
 li:hover {
     background-color: #efefef11;
@@ -77,16 +88,11 @@ li:hover {
 }
 
 
-#social-links {
-    display: flex;
-}
-
-
 .img-contact {
     width: 27px;
     margin: 0 11px 0 15px;
-    transition: .2s;
 }
+
 
 .img-contact:hover {
     transform: scale(1.2) rotate(-8deg);
@@ -98,8 +104,8 @@ li:hover {
     width: 100px;
     text-align: center;
     cursor: default;
-    transition: .2s;
 }
+
 
 #title-nav:hover {
     letter-spacing: .3px;
@@ -112,14 +118,14 @@ li:hover {
     margin: 0 13px;
 }
 
+
 #img-social img {
     width: 27px;
     opacity: 0.5;
-    transition: .2s;
 }
+
 
 #img-social img:hover {
     opacity: 0.8;
     transform: scale(1.1);
 }
-
