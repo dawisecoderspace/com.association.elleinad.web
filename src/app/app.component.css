@@ -75,7 +75,7 @@ ul {
 }
 
 
-li, .img-contact, #title-nav, #img-social img {
+li, .img-contact, #title-nav {
     transition: .2s;
 }
 
@@ -98,7 +98,7 @@ li:hover {
 
 .img-contact {
     width: 27px;
-    margin: 0 11px 0 15px;
+    margin: 0 2px 0 15px;
 }
 
 
@@ -118,23 +118,5 @@ li:hover {
 #title-nav:hover {
     letter-spacing: .3px;
     opacity: 0.7;
-}
-
-
-#img-social {
-    display: flex;
-    margin: 0 13px;
-}
-
-
-#img-social img {
-    width: 27px;
-    opacity: 0.5;
-}
-
-
-#img-social img:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
 }
 
