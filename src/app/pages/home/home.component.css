@@ -9,12 +9,13 @@ main {
     background-color: #efefef;
     box-shadow: 0px 5px 11px #0a1f32;
     width: 80%;
-    height: 100vh;
+    height: fit-content;
     padding: 35px 0px 0px 0px;
     position: relative;
     top: 170px;
     left: 50%;
     transform: translate(-50%);
+    overflow: hidden;
 }
 
 
@@ -54,28 +55,28 @@ article h1 {
   color: #194871;
   margin-bottom: 11px;
   background: linear-gradient(
-        to right,
-        #194871 10%,
-        #00affa 20%,
-        #194871 30%,
-        #194871 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-emphasis-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 6s ease-in-out infinite alternate;
+    to right,
+    #194871 10%,
+    #00affa 20%,
+    #194871 30%,
+    #194871 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-emphasis-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 6s ease-in-out infinite alternate;
 }
 
 
 @keyframes textShine {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }
 
 article .gras {
@@ -105,3 +106,55 @@ article .gras {
     transform: scale(1.1);
 }
 
+
+.description {
+  position: relative;
+  background-color: #9baebd;
+  width: 100%;
+  height: 300px;
+  padding: 70px;
+  align-content: center;
+  margin: 1px 0;
+}
+
+.description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #28397522;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.description:hover:before {
+  transform: scaleY(1);
+  transition: transform 0.5s;
+}
+
+.description h1 {
+  color: #194871;
+  font-size: 40px;
+  position: absolute;
+  top: 65px;
+  transition: .3s;
+}
+
+.description p {
+  color: #444444;
+  text-align: justify;
+  transition: .5s;
+}
+
+.description:hover h1 {
+  top: 50px;
+  color: #ffffffaa;
+}
+
+.description:hover p {
+  margin-top: 25px;
+  color: whitesmoke;
+}
