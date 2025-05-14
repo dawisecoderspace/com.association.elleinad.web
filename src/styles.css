@@ -1,9 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    background-color: #a4b8c6;
+    scroll-behavior: smooth;
+} 
+
+
 body {
     background-color: #9baebd;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1920px;
-    height: 100vh;
     margin: 0 auto;
+    box-shadow: 0px 0px 3px ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+app-root {
+    display: block;
+    overflow: auto;
+    height: 100%;
 }

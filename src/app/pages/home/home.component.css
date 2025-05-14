@@ -14,15 +14,15 @@ main, .description {
 
 
 main {
-    background-color: #efefef;
-    box-shadow: 0px 5px 11px #0a1f32;
-    width: 80%;
-    height: fit-content;
-    padding: 35px 0px 0px 0px;
-    top: 170px;
-    left: 50%;
-    transform: translate(-50%);
-    overflow: hidden;
+  background-color: #efefef;
+  box-shadow: 0px 5px 11px #0a1f32;
+  width: 80%;
+  height: fit-content;
+  padding: 35px 0px 0px 0px;
+  margin-top: 170px;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
 }
 
 
@@ -126,6 +126,7 @@ article .gras {
   padding: 70px;
   align-content: center;
   margin: 1px 0;
+  overflow: hidden;
 }
 
 .description::before, .description:hover:before {
@@ -183,3 +184,4 @@ article .gras {
 .description:hover h1::after {
   width: 100%;
 }
+
