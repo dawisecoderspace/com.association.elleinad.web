@@ -9,11 +9,18 @@
 <nav>
     <div id="social-links">
         <img src="/white-logo-call.svg" alt="logo-contact" class="img-contact">
-        <p id="title-nav">ALLÔ LA TERRE</p>
+        <a href="home" (click)="scrollToTop($event)">
+            <p id="title-nav">ALLÔ LA TERRE</p>
+        </a>
     </div>
     <ul>
-        <li>Accueil</li>
-        <li>Présentation</li>
+        <a [routerLink]="['/home']" (click)="scrollToTop($event)">
+            <li>Accueil</li>
+        </a>
+        <a [routerLink]="['/presentation']" (click)="scrollToTop($event)">
+
+            <li>Présentation</li>
+        </a>
         <li>Activités</li>
         <li>Nous contacter</li>
     </ul>

@@ -2,6 +2,7 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 
+
 @Component({
   selector: 'app-home',
   imports: [NgFor, FooterComponent],
@@ -12,6 +13,7 @@ import { FooterComponent } from '../footer/footer.component';
 
 export class HomeComponent {
   titlesDescription = ["Historique", "Vision", "Objectifs", "Cibles"]
+  identifierDescription = ["historique", "vision", "objectifs", "cibles"]
   articlesDescription = [
     "L’Association Elleinad Allo La Terre est une association à but non lucratif, créée par Madame Danielle Neukom de nationalité Suisse dans le but d’aider les femmes rurales et les jeunes en milieu rural, urbain et périurbain. L’AEAT est créée le 04 Juin 2009 à Genève, puis reconnue au Sénégal le 17 Juin 2010. « Un soir, assise dans son bureau à faire de la comptabilité, soudain une voix me dit : « vas au Sénégal .Ce fut le début de l’aventure humanitaire qui a conduit à la création de l’Association Elleinad Allo La Terre (AEAT) » déclare Mme Danielle Jocelyne Neukom.",
     "La vision de l’AEAT est d’arriver, à travers le concept « Femmes, culture et Solidarité, à bâtir un développement communautaire au bénéfice des femmes et des enfants. Notre mission est d’organiser, de fournir un encadrement technique et financier aux femmes, jeunes et enfants (monde rural, banlieue), promouvoir et soutenir une dynamique de solidarité entre les GIE du réseau Allô la terre à travers le concept de partenariat commune, promouvoir le développement du leadership féminin et une meilleure expression des jeunesses.",

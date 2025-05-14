@@ -1,5 +1,16 @@
 
 /* ---------------- Head Page (background image - logo gif - title) ---------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: default;
+}
+
+
 header, nav {
     position: fixed;
     max-width: 1920px;
@@ -85,6 +96,7 @@ li {
     margin-left: 5px;
     width: 110px;
     padding: 5px;
+    color: #efefef;
     text-align: center;
     cursor: pointer;
 }
@@ -112,6 +124,7 @@ li:hover {
     width: 100px;
     text-align: center;
     cursor: default;
+    color: #efefef;
 }
 
 

@@ -1,12 +1,12 @@
 <footer>
     <div id="bloc">
-        <div class="link-article">
-            <h2>Présentation</h2>
-            <p>Activités</p>
-            <p>Historique</p>
-            <p>Vision</p>
-            <p>Objectifs</p>
-            <p>Cibles</p>
+        <div class="link-article" id="first-bloc">
+            <a href="#"><h2 class="cursor-link">Présentation</h2></a>
+            <a href="#"><p class="cursor-link">Activités</p></a>
+            <p class="cursor-link" (click)="scrollTo('bottom-header')">Historique</p>
+            <p class="cursor-link" (click)="scrollTo('historique')">Vision</p>
+            <p class="cursor-link" (click)="scrollTo('vision')">Objectifs</p>
+            <p class="cursor-link" (click)="scrollTo('objectifs')">Cibles</p>
         </div>
         <div class="link-article">
             <h2>Suisse</h2>
@@ -25,11 +25,11 @@
             <p>Tél: +221 77 617 97 49</p>
         </div>
         <div class="link-article">
-            <h2>Associations</h2>
-            <p>Nous Contacter</p>
+            <a href="#"><h2 class="cursor-link">Associations</h2></a>
+            <a href="#"><p class="cursor-link">Nous Contacter</p></a>
             <br>
             <p>Soutenir les groupements de femmes</p>
-            <p id="savoirPlus">En savoir plus</p>
+            <a href="#"><p id="savoirPlus">En savoir plus</p></a>
         </div>
     </div>
     <p id="footer-footer">Association Elleinad Allô la terre | n°NINEA: 05396</p>
