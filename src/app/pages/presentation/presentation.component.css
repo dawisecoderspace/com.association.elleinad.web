@@ -14,14 +14,77 @@ main {
   box-shadow: 0px 5px 11px #0a1f32;
   width: 80%;
   height: fit-content;
-  padding-top: 220px;
+  padding-top: 210px;
   left: 50%;
   transform: translate(-50%);
   overflow: hidden;
 }
 
 
-#content {
-  width: 100%;
+article {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px 0;
+  margin: 30px 0;
+}
+
+
+article h1 {
+  color: #194871;
+  border-left: red 2px solid;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+article p {
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #333333;
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    margin-bottom: 55px;
+  } 50% {
+    margin-bottom: 15px;
+  }
+}
+
+
+article ul li {
+  font-size: 14px;
+  text-align: justify;
+  margin: 0 25px 15px 25px;
+  color: #333333;
+}
+
+
+
+#container {
+  background-color: #efefef;
   height: 100vh;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+
+#left {
+  width: 65%;
+}
+
+#right {
+  background-image: url(/photo-principal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0px 0px 7px;
+  width: 380px;
+  height: 500px;
+  margin-top: 40px;
 }

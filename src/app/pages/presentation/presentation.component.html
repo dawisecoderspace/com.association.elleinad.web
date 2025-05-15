@@ -1,8 +1,18 @@
 <main>
-    <div id="content">
-        <h1>Présentation</h1>
+    <div id="container">
+        <div id="left">
+            <article *ngFor="let article of articles">
+                <h1>{{ article.title }}</h1>
+
+                <p *ngFor="let para of article.paragraphs" [innerHTML]="para"></p>
+
+                <ul *ngIf="article.listItems">
+                    <li *ngFor="let item of article.listItems" [innerHTML]="item"></li>
+                </ul>
+            </article>
+        </div>
+        <div id="right"></div>
     </div>
 
     <app-footer></app-footer>
-
 </main>

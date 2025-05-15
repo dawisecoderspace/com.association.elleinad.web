@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    scrollbar-width: none;
+}
+
+
 html {
     background-color: #a4b8c6;
     scroll-behavior: smooth;
@@ -22,3 +27,11 @@ app-root {
     overflow: auto;
     height: 100%;
 }
+
+
+article i {
+  max-width: 70%;
+  font-size: 14px;
+  color: #194871;
+}
+
