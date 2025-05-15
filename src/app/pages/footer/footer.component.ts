@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -7,11 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  scrollTo(id: string) {
+  constructor(private router: Router) {}
+
+  scrollTo(id: string): void {
+    const currentUrl = this.router.url;
+
+    if (currentUrl === '/home' || currentUrl === '/') {
+      this.scrollToElement(id);
+    } else {
+      this.router.navigate(['/home']).then(() => {
+        // Attendre un peu pour que le DOM du HomeComponent soit prêt
+        setTimeout(() => this.scrollToElement(id), 100);
+      });
+    }
+  }
+
+  private scrollToElement(id: string): void {
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const offset = 210;
+      const top = el.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: top - offset, behavior: 'smooth' });
     }
   }
 }
-

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 
@@ -72,27 +72,40 @@ export class PresentationComponent {
   private currentIndex = 0
 
   ngOnInit(): void {
-    this.startLoop();
+    this.startLoop()
   }
 
   startLoop(): void {
-    this.displayedText = '';
-    this.currentIndex = 0;
+    this.displayedText = ''
+    this.currentIndex = 0
 
     const interval = setInterval(() => {
       if (this.currentIndex < this.associations.length) {
-        this.displayedText += this.associations[this.currentIndex];
-        this.currentIndex++;
+        this.displayedText += this.associations[this.currentIndex]
+        this.currentIndex++
       } else {
-        clearInterval(interval);
+        clearInterval(interval)
 
         // Attente 30s, puis recommence la boucle
         setTimeout(() => {
-          this.startLoop();
+          this.startLoop()
         }, 20000);
       }
     }, 100); // délai entre lettres (modifiable)
   }
   
+  scrollToAssociation(): void {
+    const target = document.getElementById('associations')
+    if (target) {
+      const top = target.getBoundingClientRect().top + window.scrollY
+      const offset = 215
+
+      window.scrollTo({
+        top: top - offset,
+        behavior: 'smooth',
+      });
+    }
+  }
+
 }
 

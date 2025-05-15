@@ -9,9 +9,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'com.association.elleinad.web';
   scrollToTop(event: Event) {
-    event.preventDefault(); // empêche le comportement par défaut du lien
+    event.preventDefault()
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

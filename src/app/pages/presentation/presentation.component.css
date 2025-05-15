@@ -23,7 +23,7 @@ main {
 
 article {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   margin: 30px 0;
 }
 
@@ -33,6 +33,7 @@ article h1 {
   border-left: red 2px solid;
   padding-left: 10px;
   font-size: 20px;
+  margin-top: -20px;
   margin-bottom: 15px;
 }
 
@@ -65,17 +66,19 @@ article ul li {
 
 #container {
   background-color: #efefef;
-  height: 100vh;
-  padding: 0 20px;
+  padding: 40px 20px 0 20px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  align-items: center;
   overflow-y: scroll;
 }
 
 
 #left {
-  width: 65%;
+  overflow-y: scroll;
+  width: 67%;
+  height: 500px;
 }
 
 #right {
@@ -87,7 +90,6 @@ article ul li {
   box-shadow: 0px 0px 7px;
   width: 380px;
   height: 500px;
-  margin-top: 40px;
   text-align: center;
   align-content: end;
 }
