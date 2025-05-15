@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 
@@ -65,5 +65,34 @@ export class PresentationComponent {
       ]
     }
   ];
+
+
+  associations: string = "Associations"
+  displayedText: string = ''
+  private currentIndex = 0
+
+  ngOnInit(): void {
+    this.startLoop();
+  }
+
+  startLoop(): void {
+    this.displayedText = '';
+    this.currentIndex = 0;
+
+    const interval = setInterval(() => {
+      if (this.currentIndex < this.associations.length) {
+        this.displayedText += this.associations[this.currentIndex];
+        this.currentIndex++;
+      } else {
+        clearInterval(interval);
+
+        // Attente 30s, puis recommence la boucle
+        setTimeout(() => {
+          this.startLoop();
+        }, 20000);
+      }
+    }, 100); // délai entre lettres (modifiable)
+  }
+  
 }
 

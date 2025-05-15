@@ -68,6 +68,7 @@ article ul li {
   height: 100vh;
   padding: 0 20px;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   overflow-y: scroll;
 }
@@ -87,4 +88,72 @@ article ul li {
   width: 380px;
   height: 500px;
   margin-top: 40px;
+  text-align: center;
+  align-content: end;
+}
+
+
+#right h1 {
+  background-color: #ffffff88;
+  height: 60px;
+  font-size: 30px;
+  color: #194871;
+  align-content: center;
+}
+
+
+/* ------------------- Associations ------------------- */
+#associations {
+  margin-top: 60px;
+  padding: 0 11px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-y: scroll;
+}
+
+
+.groupement {
+  max-width: 30%;
+  height: 500px;
+  margin-bottom: 50px;
+  transition: .3s;
+}
+
+
+.groupement:hover {
+  transform: scale(1.02);
+}
+
+
+.groupement header {
+  background-image: url(/photo-association.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+
+
+.groupement h1 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #194871;
+  margin: 10px 0 5px 0;
+}
+
+
+.groupement strong {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color: #306797;
+}
+
+
+.groupement p {
+  margin-top: 7px;
+  color: #444444;
+  text-align: justify;
 }
