@@ -18,7 +18,7 @@
 
     <table id="repertoire">
       <tr>
-        <th>Nombre</th>
+        <th id="leftTH">Nombre</th>
         <th>Localités</th>
         <th>Responsables</th>
         <th>Contacts</th>
@@ -32,7 +32,7 @@
           <td class="gauche">{{ contact.numero }}</td>
           <td>{{ contact.localite }}</td>
           <td>{{ contact.responsable }}</td>
-          <td>{{ contact.contact }}</td>
+          <td class="contact-contact">{{ contact.contact }}</td>
         </tr>
       </ng-container>
     </table>

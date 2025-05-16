@@ -102,6 +102,11 @@ table {
 }
 
 
+table tr .contact-contact {
+  min-width: 160px;
+}
+
+
 table tr th, table tr td {
   padding: 15px 20px;
   border: 0.5px solid #333333;
@@ -135,10 +140,25 @@ table tr td {
 
 
 @media only screen and (max-width: 1024px) {
+  table {
+    width: 100%;
+  }
+
+
+  table tr td, table tr th {
+    font-size: 14px;
+  }
 }
 
 
 @media only screen and (max-width: 815px) {
+  main {
+    width: 96%;
+  }
+
+  table tr .gauche, table tr #leftTH {
+    display: none;
+  }
 }
 
 
