@@ -91,7 +91,8 @@ article .gras {
 }
 
 
-.description h1, .description p, .description p, #img-social img {
+main, .description, .description h1, .description p,
+.description p, #img-social img {
   transition: .3s;
 }
 
@@ -153,6 +154,7 @@ article .gras {
   display: inline-block;
   color: #194871;
   font-size: 2.5em;
+  margin-bottom: 5px;
 }
 
 .description h1::after {
@@ -182,5 +184,45 @@ article .gras {
 
 .description:hover h1::after {
   width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  main {
+    width: 95%;
+  }
+}
+
+
+@media only screen and (max-width: 815px) {
+  article {
+    width: 100%;
+  }
+
+  .description h1 {
+    font-size: 2.3rem;
+    margin-bottom: 11px;
+  }
+
+  .description p {
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 580px) {
+  main {
+    width: 100%;
+  }
+
+  .description {
+    padding: 22px;
+  }
+
+  article p {
+    font-size: 14px;
+  }
 }
 
