@@ -1,1 +1,33 @@
-<p>contact works!</p>
+<main>
+    <header>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="inputClass">
+                <input type="email" formControlName="user_email" placeholder="Email" />
+                <div *ngIf="contactForm.get('user_email')?.touched && contactForm.get('user_email')?.invalid">
+                <small *ngIf="contactForm.get('user_email')?.errors?.['required']">Email requis.</small>
+                <small *ngIf="contactForm.get('user_email')?.errors?.['email']">Email invalide.</small>
+                </div>
+            </div>
+
+            <div class="inputClass">
+                <input type="text" formControlName="subject" placeholder="Sujet" />
+                <div *ngIf="contactForm.get('subject')?.touched && contactForm.get('subject')?.invalid">
+                <small>Sujet requis.</small>
+                </div>
+            </div>
+
+            <div class="inputClass">
+                <textarea formControlName="message" placeholder="Message..."></textarea>
+                <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+                <small *ngIf="contactForm.get('message')?.errors?.['required']">Message requis.</small>
+                <small *ngIf="contactForm.get('message')?.errors?.['minlength']">10 caractères minimum.</small>
+                </div>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </header>
+
+    <app-footer></app-footer>
+
+</main>
