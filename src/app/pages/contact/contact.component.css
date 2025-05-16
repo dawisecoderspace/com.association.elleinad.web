@@ -101,26 +101,46 @@ table {
   transform: translate(-50%);
 }
 
+
 table tr th, table tr td {
   padding: 15px 20px;
   border: 0.5px solid #333333;
 }
+
 
 table tr th {
   background-color: #194871;
   color: whitesmoke;
 }
 
+
 table tr .pays {
   background-color: #4178a8;
   color: whitesmoke;
+  text-align: center;
 }
+
 
 table tr .gauche {
   background-color: #80acd3;
   color: #555555;
 }
 
+
 table tr td {
   background-color: #dddddd;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+}
+
+
+@media only screen and (max-width: 815px) {
+}
+
+
+@media only screen and (max-width: 580px) {
 }

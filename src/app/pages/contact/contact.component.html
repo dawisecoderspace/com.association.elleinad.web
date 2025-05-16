@@ -16,57 +16,27 @@
         <p id="statusMessage"></p>
     </header>
 
-    <table>
-        <tr>
-            <th>Nombre</th>
-            <th>Localités</th>
-            <th>Responsables</th>
-            <th>Contacts</th>
+    <table id="repertoire">
+      <tr>
+        <th>Nombre</th>
+        <th>Localités</th>
+        <th>Responsables</th>
+        <th>Contacts</th>
+      </tr>
+
+      <ng-container *ngFor="let groupe of groupes">
+        <tr></tr> <tr></tr>
+        <tr><td colspan="4" class="pays">{{ groupe.nom }}</td></tr>
+
+        <tr *ngFor="let contact of groupe.contacts">
+          <td class="gauche">{{ contact.numero }}</td>
+          <td>{{ contact.localite }}</td>
+          <td>{{ contact.responsable }}</td>
+          <td>{{ contact.contact }}</td>
         </tr>
-        <tr> <td colspan="4" class="pays">Fatick</td> </tr>
-        <tr>
-            <td class="gauche">01</td>
-            <td>Joal</td>
-            <td>Présidente</td>
-            <td>+221 77 222 35 52</td>
-        </tr>
-        <tr>
-            <td class="gauche">02</td>
-            <td>Ndianda</td>
-            <td>Marth Diagne</td>
-            <td>+221 77 614 29 87</td>
-        </tr>
-        <tr>
-            <td class="gauche">03</td>
-            <td>Fadiale</td>
-            <td>Eliane</td>
-            <td>+221 77 766 21 18</td>
-        </tr>
-        <tr>
-            <td class="gauche">04</td>
-            <td>Dioneware</td>
-            <td>Na Fatou SARR</td>
-            <td>+221 77 449 35 42</td>
-        </tr>
-        <tr>
-            <td class="gauche">05</td>
-            <td>Ndiaganio</td>
-            <td>Mary Gningue</td>
-            <td>+221 77 549 33 18</td>
-        </tr>
-        <tr>
-            <td class="gauche">06</td>
-            <td>Dioyine</td>
-            <td>Mado Diouf</td>
-            <td>+221 77 173 08 22</td>
-        </tr>
-        <tr>
-            <td class="gauche">07</td>
-            <td>AELMAS</td>
-            <td>Mme Badiane</td>
-            <td>+1(678) 913 88 70</td>
-        </tr>
+      </ng-container>
     </table>
+
 
     <app-footer></app-footer>
 

@@ -23,9 +23,9 @@
         <a [routerLink]="['/presentation']" (click)="navigateToSection($event, 'associations')">
             <li>Activités</li>
         </a>
-
-
-        <li>Nous contacter</li>
+        <a [routerLink]="['/contact']" (click)="scrollToTop($event)">
+            <li>Nous contacter</li>
+        </a>
     </ul>
 </nav>
 

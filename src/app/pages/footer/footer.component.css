@@ -85,3 +85,31 @@ footer {
     text-align: center;
     letter-spacing: 1px;
 }
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .link-article h2 {
+        font-size: 15px;
+    }
+
+    .link-article p {
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 815px) {
+    .no-tablet {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 580px) {
+    .no-phone {
+        display: none;
+    }
+}

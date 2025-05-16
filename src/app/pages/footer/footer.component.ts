@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
+  imports: [RouterModule],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
@@ -51,5 +53,31 @@ export class FooterComponent {
         state: { scrollToId: targetId }
       });
     }
+  }
+
+  navigateToRepertoire(event: Event, targetId: string) {
+    event.preventDefault();
+
+    if (this.router.url.startsWith('/contact')) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        const offset = 230;
+        const top = element.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+          top,
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      this.router.navigate(['/contact'], {
+        state: { scrollToId: targetId }
+      });
+    }
+  }
+
+  scrollToTop(event: Event) {
+    event.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

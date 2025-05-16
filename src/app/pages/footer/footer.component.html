@@ -1,6 +1,6 @@
 <footer>
     <div id="bloc">
-        <div class="link-article" id="first-bloc">
+        <div class="link-article no-tablet" id="first-bloc">
             <a href="#"><h2 class="cursor-link">Présentation</h2></a>
             <p class="cursor-link" (click)="navigateToSection($event, 'associations')">Activités</p>
             <p class="cursor-link" (click)="scrollTo('historique')">Historique</p>
@@ -24,12 +24,12 @@
             <p>Email: soirebaayahoo.fr</p>
             <p>Tél: +221 77 617 97 49</p>
         </div>
-        <div class="link-article">
+        <div class="link-article no-phone">
             <h2 class="cursor-link" (click)="navigateToSection($event, 'associations')">Associations</h2>
-            <a href="#"><p class="cursor-link">Nous Contacter</p></a>
+            <p class="cursor-link" [routerLink]="['/contact']" (click)="scrollToTop($event)">Nous Contacter</p>
             <br>
             <p>Soutenir les groupements de femmes</p>
-            <a href="#"><p id="savoirPlus">En savoir plus</p></a>
+            <p id="savoirPlus" (click)="navigateToRepertoire($event, 'repertoire')">En savoir plus</p>
         </div>
     </div>
     <p id="footer-footer">Association Elleinad Allô la terre | n°NINEA: 05396</p>
