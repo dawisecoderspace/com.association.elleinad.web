@@ -2,7 +2,7 @@
     <div id="bloc">
         <div class="link-article" id="first-bloc">
             <a href="#"><h2 class="cursor-link">Présentation</h2></a>
-            <a href="#"><p class="cursor-link">Activités</p></a>
+            <p class="cursor-link" (click)="navigateToSection($event, 'associations')">Activités</p>
             <p class="cursor-link" (click)="scrollTo('historique')">Historique</p>
             <p class="cursor-link" (click)="scrollTo('vision')">Vision</p>
             <p class="cursor-link" (click)="scrollTo('objectifs')">Objectifs</p>
@@ -25,7 +25,7 @@
             <p>Tél: +221 77 617 97 49</p>
         </div>
         <div class="link-article">
-            <a href="#"><h2 class="cursor-link">Associations</h2></a>
+            <h2 class="cursor-link" (click)="navigateToSection($event, 'associations')">Associations</h2>
             <a href="#"><p class="cursor-link">Nous Contacter</p></a>
             <br>
             <p>Soutenir les groupements de femmes</p>

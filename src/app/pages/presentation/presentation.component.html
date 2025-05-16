@@ -18,79 +18,14 @@
     
 
     <div id="associations">
-        <div class="groupement">
+        <div *ngFor="let g of groupements" class="{{ g.class_name }}">
             <header></header>
-            <h1>Nom Groupement</h1>
-            <strong>Dakar / Petit Mbao 535, Cité Fougérole</strong>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis 
-                consequuntur dolorem obcaecati modi incidunt voluptatibus voluptatem 
-                ratione aliquid facere vero voluptas molestias dolore iste, asperiores, 
-                ullam quaerat consequatur ex optio minus iure. Iure eveniet totam, quas 
-                mollitia magni voluptatem dolorum! Possimus adipisci labore similique 
-                officiis omnis eos repudiandae hic sequi totam voluptatem saepe sit 
-                beatae doloribus odio doloremque, optio sunt ullam consequatur iure.</p>
-        </div>
-        <div class="groupement">
-            <header></header>
-            <h1>Nom Groupement</h1>
-            <strong>Dakar / Petit Mbao 535, Cité Fougérole</strong>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis 
-                consequuntur dolorem obcaecati modi incidunt voluptatibus voluptatem 
-                ratione aliquid facere vero voluptas molestias dolore iste, asperiores, 
-                ullam quaerat consequatur ex optio minus iure. Iure eveniet totam, quas 
-                mollitia magni voluptatem dolorum! Possimus adipisci labore similique 
-                officiis omnis eos repudiandae hic sequi totam voluptatem saepe sit 
-                beatae doloribus odio doloremque, optio sunt ullam consequatur iure.</p>
-        </div>
-        <div class="groupement">
-            <header></header>
-            <h1>Nom Groupement</h1>
-            <strong>Dakar / Petit Mbao 535, Cité Fougérole</strong>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis 
-                consequuntur dolorem obcaecati modi incidunt voluptatibus voluptatem 
-                ratione aliquid facere vero voluptas molestias dolore iste, asperiores, 
-                ullam quaerat consequatur ex optio minus iure. Iure eveniet totam, quas 
-                mollitia magni voluptatem dolorum! Possimus adipisci labore similique 
-                officiis omnis eos repudiandae hic sequi totam voluptatem saepe sit 
-                beatae doloribus odio doloremque, optio sunt ullam consequatur iure.</p>
-        </div>
-        <div class="groupement">
-            <header></header>
-            <h1>Nom Groupement</h1>
-            <strong>Dakar / Petit Mbao 535, Cité Fougérole</strong>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis 
-                consequuntur dolorem obcaecati modi incidunt voluptatibus voluptatem 
-                ratione aliquid facere vero voluptas molestias dolore iste, asperiores, 
-                ullam quaerat consequatur ex optio minus iure. Iure eveniet totam, quas 
-                mollitia magni voluptatem dolorum! Possimus adipisci labore similique 
-                officiis omnis eos repudiandae hic sequi totam voluptatem saepe sit 
-                beatae doloribus odio doloremque, optio sunt ullam consequatur iure.</p>
-        </div>
-        <div class="groupement">
-            <header></header>
-            <h1>Nom Groupement</h1>
-            <strong>Dakar / Petit Mbao 535, Cité Fougérole</strong>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis 
-                consequuntur dolorem obcaecati modi incidunt voluptatibus voluptatem 
-                ratione aliquid facere vero voluptas molestias dolore iste, asperiores, 
-                ullam quaerat consequatur ex optio minus iure. Iure eveniet totam, quas 
-                mollitia magni voluptatem dolorum! Possimus adipisci labore similique 
-                officiis omnis eos repudiandae hic sequi totam voluptatem saepe sit 
-                beatae doloribus odio doloremque, optio sunt ullam consequatur iure.</p>
-        </div>
-        <div class="groupement">
-            <header></header>
-            <h1>Nom Groupement</h1>
-            <strong>Dakar / Petit Mbao 535, Cité Fougérole</strong>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis 
-                consequuntur dolorem obcaecati modi incidunt voluptatibus voluptatem 
-                ratione aliquid facere vero voluptas molestias dolore iste, asperiores, 
-                ullam quaerat consequatur ex optio minus iure. Iure eveniet totam, quas 
-                mollitia magni voluptatem dolorum! Possimus adipisci labore similique 
-                officiis omnis eos repudiandae hic sequi totam voluptatem saepe sit 
-                beatae doloribus odio doloremque, optio sunt ullam consequatur iure.</p>
+            <h1>{{ g.title }}</h1>
+            <strong>{{ g.action }}</strong>
+            <p [innerHTML]="g.params"></p>
         </div>
     </div>
+
 
     <app-footer></app-footer>
 </main>

@@ -30,4 +30,26 @@ export class FooterComponent {
       window.scrollTo({ top: top - offset, behavior: 'smooth' });
     }
   }
+
+
+  navigateToSection(event: Event, targetId: string) {
+    event.preventDefault();
+
+    if (this.router.url.startsWith('/presentation')) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        const offset = 215;
+        const top = element.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+          top,
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      this.router.navigate(['/presentation'], {
+        state: { scrollToId: targetId }
+      });
+    }
+  }
 }

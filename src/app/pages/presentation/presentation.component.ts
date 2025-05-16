@@ -67,7 +67,254 @@ export class PresentationComponent {
   ];
 
 
-  associations: string = "Associations"
+
+
+  // GROUPEMENTS DES FEMMES SENEGAL
+  groupements = [
+    {
+      class_name: 'groupement',
+      title: 'DIOHINE',
+      action: 'Autonomisation',
+      params: `
+        <b>2005 - 2012</b> <br>
+        <br>
+        Microcrédit <br>
+        Équipement des femmes en moissonneuse <br>
+        <br>
+        <i>Production agricole</i> <br> 
+        <i>Achat de décortiqueuse de Mil</i> <br>
+        <i>Les femmes des 70 Village du CR</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'NDIAGANIAO',
+      action: 'Autonomisation',
+      params: `
+        <b>2005 - 2007 - 2010</b> <br>
+        <br>
+        Microcrédit <br>
+        Equipement en machine de presse huile <br>
+        Générateur pour le forage <br>
+        <br>
+        <i>Production agricole et maraichères</i> <br>
+        <i>Production d’huile d’arachide et d’aliment de bétail</i> <br>
+        <i>Femmes des 34 villages du CR</i> <br>
+        <i>Femmes de 3 villages : koulokk, keur cheikh, Sangué</i> <br>
+        <i>Femmes de Ndiaganiao commune</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'NIORO',
+      action: 'Eau et environnement',
+      params: `
+        <b>2010 - 2013</b> <br>
+        <br>
+        Microcrédit <br>
+        Appui technique et financier<br>
+        Réfection de puits du quartier Sud 3 <br>
+        <br>
+        <i>Programme de lutte contre le ravinement du CJR</i> <br>
+        <i>Production et vente de petits ruminants</i> <br>
+        <i>Production d’oseille bio (Bissap Bio)</i> <br>
+        <i>Lutte contre le ravinement des surfaces arables</i> (CJR)
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'DIONEWAR',
+      action: 'Autonomisation',
+      params: `
+        <b>2007</b> <br>
+        <br>
+        Microcrédit <br>
+        Production de produits halieutiques <br>
+        Festival des iles du Saloum <br>
+        Programme Zéro plastique sur l’ile <br>
+        <br>
+        <i>Environnement et Écotourisme</i> <br>
+        <i>Fédération des GIE</i> <br>
+        <i>Mandimo</i> <br>
+        <i>Association des éco guident</i> <br>
+        <i>Interpole Guiss-guiss</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'CAP SKI RING',
+      action: 'Environnement',
+      params: `
+        <b>2007</b> <br>
+        <br>
+        Campagnes de sensibilisation <br>
+        Protection de la mangrove <br>
+        <br>
+        <i>Protection de la mangrove</i> <br>
+        <i>Association Jah Enab</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'NDIANDA',
+      action: 'Autonomisation',
+      params: `
+        <b>2007</b> <br>
+        <br>
+        Microcrédit <br>
+        <br>
+        <i>Association les amies de Elleinad</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'JOAL',
+      action: 'Autonomisation',
+      params: `
+        <b>2007</b> <br>
+        <br>
+        Microcrédit <br>
+        <br>
+        <i>Production de produits halieutiques</i> <br>
+        <i>Association des femmes catholique de Joal</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'NORD FOIRE (DAKAR)',
+      action: 'Autonomisation',
+      params: `
+        <b>2008</b> <br>
+        <br>
+        Microcrédit <br>
+        Formation couture des techniciennes de surface domestique <br>
+        <br>
+        <i>Renforcement des capacités des techniciennes</i> <br>
+        <i>Association de femmes de la Cité AELMAS</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'MBOUR',
+      action: '(Appui) Associations',
+      params: `
+        2012 <br>
+        <br>
+        Initiatives culturelles pour les enfants déshérités <br>
+        <br>
+        <i>Protection aux enfants déshérités</i> <br>
+        <i>Association enfant du monde</i> <br>
+        <i>Darha de l’espoir</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'GRAND-DAKAR',
+      action: 'Autonomisation',
+      params: `
+        <b>2012</b> <br>
+        <br>
+        Programme de lutte contre les violences <br>
+        Sexistes & urbaines <br>
+        <br>
+        <i>Mis en place d’une unité de distribution</i> <br>
+        <i>Produits alimentaires pour appuyer les gargotières</i> <br>
+        <i>Lutte contre les violences faites aux femmes</i> <br>
+        <i>Union des femmes de Grand-Dakar</i> <br>
+        <i>Mouvement jeunesse et micro</i> <br>
+        <i>Collectif des gargotières de Grand-Dakar</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'YEUMBEUL NORD',
+      action: 'Autonomisation',
+      params: `
+        <b>2012</b> <br>
+        <br>
+        Microcrédit <br>
+        Encadrement technique <br>
+        <br>
+        <i>Mis en place d’une unité de distribution</i> <br>
+        <i>Produits alimentaires pour appuyer les gargotières</i> <br>
+        <i>Lutte contre les violences faites aux femmes</i> <br>
+        <i>Club des amies de Danielle</i> <br>
+        <i>GIE Teinture</i> <br>
+        <i>Réseau des GIE de Yeumbeul</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'HLM GRAND MÉDINE',
+      action: 'Autonomisation',
+      params: `
+        <b>2020</b> <br>
+        <br>
+        Microcrédit <br>
+        <br>
+        <i>Association And Déggo Ligueye</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'PIKINE',
+      action: 'Autonomisation',
+      params: `
+        <b>2010</b> <br>
+        <br>
+        Microcrédit <br>
+        <br>
+        <i>Association des Jeunes Dames <br>
+        pour la paix et la solidarité</i> <br>
+        <i>Pikine khourou Naar</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'POTOU / THIEP',
+      action: 'Autonomisation',
+      params: `
+        <b>2012 - 2014</b> <br>
+        Microcrédit <br>
+        <br>
+        <i>Femmes maraichères - Potou</i> <br>
+        <i>Association de femmes maraîchères</i> - Thiep
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'THIES',
+      action: '(Appui) Retour des émigrés de Thiès',
+      params: `
+        <b>2010</b> <br>
+        Microcrédit <br>
+        Achat de taxis <br>
+        Achat de matériel d’animation musicale <br>
+        Subvention périodique <br>
+        <br>
+        <i>Émigrés de retour</i> <br>
+        <i>Association des femmes de Mbour3</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      title: 'PODOR / DAHRA DJOLOFF',
+      action: 'Autonomisation Encadrement technique',
+      params: `
+        <b>2015</b> <br>
+        <br>
+        Microcrédit <br>
+        Appui technique dans le cadre du développement de la filière des équidés <br>
+        <br>
+        <i>Association les amies de Elleinad</i> <br>
+        <i>Sos-Equidés</i>
+      ` 
+    }
+  ]
+
+
+
+  associations: string = "Activités"
   displayedText: string = ''
   private currentIndex = 0
 
@@ -104,6 +351,26 @@ export class PresentationComponent {
         top: top - offset,
         behavior: 'smooth',
       });
+    }
+  }
+
+  ngAfterViewInit(): void {
+    const targetId = history.state?.scrollToId;
+
+    if (targetId) {
+      // on attend un peu pour que le DOM soit prêt (si async content)
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          const offset = 215; // idem ici
+          const top = element.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({
+            top,
+            behavior: 'smooth'
+          });
+        }
+      }, 10);
     }
   }
 

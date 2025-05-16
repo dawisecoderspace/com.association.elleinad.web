@@ -18,10 +18,13 @@
             <li>Accueil</li>
         </a>
         <a [routerLink]="['/presentation']" (click)="scrollToTop($event)">
-
             <li>Présentation</li>
         </a>
-        <li>Activités</li>
+        <a [routerLink]="['/presentation']" (click)="navigateToSection($event, 'associations')">
+            <li>Activités</li>
+        </a>
+
+
         <li>Nous contacter</li>
     </ul>
 </nav>
