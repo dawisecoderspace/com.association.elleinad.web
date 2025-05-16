@@ -65,11 +65,8 @@ textarea:focus {
 }
 
 
-small {
-  color: red;
-  font-size: 0.8rem;
-  margin-top: 0.25rem;
-  position: absolute;
+#statusMessage {
+  font-size: 12px;
 }
 
 
@@ -94,3 +91,36 @@ button:active {
   color: yellow;
 }
 
+
+table {
+  width: 90%;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+table tr th, table tr td {
+  padding: 15px 20px;
+  border: 0.5px solid #333333;
+}
+
+table tr th {
+  background-color: #194871;
+  color: whitesmoke;
+}
+
+table tr .pays {
+  background-color: #4178a8;
+  color: whitesmoke;
+}
+
+table tr .gauche {
+  background-color: #80acd3;
+  color: #555555;
+}
+
+table tr td {
+  background-color: #dddddd;
+}

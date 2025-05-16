@@ -1,32 +1,72 @@
 <main>
     <header>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <div class="inputClass">
-                <input type="email" formControlName="user_email" placeholder="Email" />
-                <div *ngIf="contactForm.get('user_email')?.touched && contactForm.get('user_email')?.invalid">
-                <small *ngIf="contactForm.get('user_email')?.errors?.['required']">Email requis.</small>
-                <small *ngIf="contactForm.get('user_email')?.errors?.['email']">Email invalide.</small>
-                </div>
-            </div>
+        <form id="contactForm" method="POST">
+            <input type="email" name="email" placeholder="Votre email" required />
+            <input type="text" name="subject" placeholder="Sujet" required />
+            <textarea name="message" placeholder="Votre message..." required></textarea>
 
-            <div class="inputClass">
-                <input type="text" formControlName="subject" placeholder="Sujet" />
-                <div *ngIf="contactForm.get('subject')?.touched && contactForm.get('subject')?.invalid">
-                <small>Sujet requis.</small>
-                </div>
-            </div>
-
-            <div class="inputClass">
-                <textarea formControlName="message" placeholder="Message..."></textarea>
-                <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
-                <small *ngIf="contactForm.get('message')?.errors?.['required']">Message requis.</small>
-                <small *ngIf="contactForm.get('message')?.errors?.['minlength']">10 caractères minimum.</small>
-                </div>
-            </div>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_subject" value="Site Association Elleinad" />
 
             <button type="submit">Envoyer</button>
+
+            <input type="text" name="_honey" style="display:none">
         </form>
+        <p id="statusMessage"></p>
     </header>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Localités</th>
+            <th>Responsables</th>
+            <th>Contacts</th>
+        </tr>
+        <tr> <td colspan="4" class="pays">Fatick</td> </tr>
+        <tr>
+            <td class="gauche">01</td>
+            <td>Joal</td>
+            <td>Présidente</td>
+            <td>+221 77 222 35 52</td>
+        </tr>
+        <tr>
+            <td class="gauche">02</td>
+            <td>Ndianda</td>
+            <td>Marth Diagne</td>
+            <td>+221 77 614 29 87</td>
+        </tr>
+        <tr>
+            <td class="gauche">03</td>
+            <td>Fadiale</td>
+            <td>Eliane</td>
+            <td>+221 77 766 21 18</td>
+        </tr>
+        <tr>
+            <td class="gauche">04</td>
+            <td>Dioneware</td>
+            <td>Na Fatou SARR</td>
+            <td>+221 77 449 35 42</td>
+        </tr>
+        <tr>
+            <td class="gauche">05</td>
+            <td>Ndiaganio</td>
+            <td>Mary Gningue</td>
+            <td>+221 77 549 33 18</td>
+        </tr>
+        <tr>
+            <td class="gauche">06</td>
+            <td>Dioyine</td>
+            <td>Mado Diouf</td>
+            <td>+221 77 173 08 22</td>
+        </tr>
+        <tr>
+            <td class="gauche">07</td>
+            <td>AELMAS</td>
+            <td>Mme Badiane</td>
+            <td>+1(678) 913 88 70</td>
+        </tr>
+    </table>
 
     <app-footer></app-footer>
 

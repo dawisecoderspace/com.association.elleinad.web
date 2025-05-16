@@ -1,31 +1,40 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
-import { CommonModule } from '@angular/common';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
-  imports: [FooterComponent, CommonModule, ReactiveFormsModule],
+  imports: [FooterComponent],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrl: './contact.component.css',
 })
-export class ContactComponent {
-  contactForm: FormGroup;
+export class ContactComponent implements AfterViewInit {
+  ngAfterViewInit() {
+    const form = document.getElementById('contactForm') as HTMLFormElement;
+    const status = document.getElementById('statusMessage') as HTMLElement;
 
-  constructor(private fb: FormBuilder) {
-    this.contactForm = this.fb.group({
-      user_email: ['', [Validators.required, Validators.email]],
-      subject: ['', Validators.required],
-      message: ['', [Validators.required, Validators.minLength(10)]],
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // empêche la redirection
+
+      const data = new FormData(form);
+
+      fetch('https://formsubmit.co/elleinad2008@gmail.com', {
+        method: 'POST',
+        body: data,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            status.innerText = '✅ Message envoyé avec succès !';
+            form.reset();
+          } else {
+            status.innerText = '❌ Une erreur est survenue.';
+          }
+        })
+        .catch(() => {
+          status.innerText = '❌ Une erreur réseau est survenue.';
+        });
     });
-  }
-
-  onSubmit() {
-    if (this.contactForm.valid) {
-      console.log('Formulaire soumis ! ✅', this.contactForm.value);
-      this.contactForm.reset();
-    } else {
-      this.contactForm.markAllAsTouched();
-    }
   }
 }
