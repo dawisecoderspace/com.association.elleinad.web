@@ -83,7 +83,7 @@ article ul li {
 }
 
 #right {
-  background-image: url(/photo-principal.png);
+  background-image: url(/assets/photo-principal.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -131,7 +131,7 @@ article ul li {
 
 
 .groupement header {
-  background-image: url(/photo-association.png);
+  background-image: url(/assets/photo-association.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

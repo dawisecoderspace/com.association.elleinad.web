@@ -27,7 +27,7 @@ main {
 header {
   padding: 195px 25px 25px 25px;
   text-align: center;
-  background-image: url('/back_header.png');
+  background-image: url('/assets/back_header.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
