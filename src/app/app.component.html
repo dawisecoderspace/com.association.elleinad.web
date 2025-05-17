@@ -7,12 +7,49 @@
     <h3>ALLÔ LA TERRE</h3>
 </header>
 <nav>
-    <div id="social-links">
-        <img src="assets/white-logo-call.svg" alt="logo-contact" class="img-contact">
-        <a href="home" (click)="scrollToTop($event)">
-            <p id="title-nav">ALLÔ LA TERRE</p>
-        </a>
+    <div
+    id="social-links"
+        (mouseover)="showBubble = true"
+        (mouseout)="showBubble = false"
+        (mousemove)="updateMousePosition($event)"
+    >
+    <img src="assets/white-logo-call.svg" alt="logo-contact" class="img-contact" />
+    <a href="home" (click)="scrollToTop($event)">
+        <p id="title-nav">ALLÔ LA TERRE</p>
+    </a>
+
+    <!-- Bulle qui suit la souris -->
+    <div
+        class="contact-bubble"
+        *ngIf="showBubble"
+        [ngStyle]="{ top: bubbleY + 'px', left: bubbleX + 'px' }"
+    >
+        +41 227 713 304
     </div>
+    </div>
+
+    <img
+        id="burger"
+        [src]="menuOuvert ? 'assets/burger-bar-close.svg' : 'assets/burger-bar-open.svg'"
+        alt="burger-bar"
+        (click)="toggleMenu()"
+    />
+
+    <ul id="nav-burger" *ngIf="menuOuvert">
+        <a [routerLink]="['/home']" (click)="scrollToTop($event)">
+            <li>Accueil</li>
+        </a>
+        <a [routerLink]="['/presentation']" (click)="scrollToTop($event)">
+            <li>Présentation</li>
+        </a>
+        <a [routerLink]="['/presentation']" (click)="navigateToSection($event, 'associations')">
+            <li>Activités</li>
+        </a>
+        <a [routerLink]="['/contact']" (click)="scrollToTop($event)">
+            <li>Nous contacter</li>
+        </a>
+    </ul>
+
     <ul>
         <a [routerLink]="['/home']" (click)="scrollToTop($event)">
             <li>Accueil</li>

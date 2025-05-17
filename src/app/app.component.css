@@ -108,14 +108,31 @@ li:hover {
 }
 
 
-.img-contact {
-    width: 27px;
-    margin: 0 2px 0 15px;
+#social-links {
+  position: relative;
 }
 
+.img-contact {
+  width: 27px;
+  margin: 0 2px 0 15px;
+  transition: transform 0.2s ease;
+}
 
 .img-contact:hover {
     transform: scale(1.2) rotate(-8deg);
+}
+
+.contact-bubble {
+  position: fixed; /* Pour qu'elle suive la souris dans la fenêtre */
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 1000;
+  transition: opacity 0.1s ease;
 }
 
 
@@ -131,6 +148,42 @@ li:hover {
 #title-nav:hover {
     letter-spacing: .3px;
     opacity: 0.7;
+}
+
+
+
+#burger {
+    width: 27px;
+    height: 27px;
+    margin: 0 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+
+
+#burger:hover {
+    opacity: 0.9;
+}
+
+
+#nav-burger {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 27px;
+    width: 50%;
+}
+
+
+#nav-burger li {
+    background-color: #00000077;
+    backdrop-filter: blur(3px);               /* applique le flou */
+    -webkit-backdrop-filter: blur(3px);
+    font-size: 22px;
+    width: 100%;
+    padding: 20px 5px;
 }
 
 
@@ -162,8 +215,29 @@ li:hover {
 
 
 @media only screen and (max-width: 815px) {
+    #burger {
+        display: block;
+    }
+    
     ul {
         display: none;
+    }
+
+    #nav-burger {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 580px) {
+    #nav-burger {
+        right: 0;
+        width: 100%;
+    }
+
+    #nav-burger li {
+        font-size: 25px;
+        padding: 35px 10px;
     }
 }
 
