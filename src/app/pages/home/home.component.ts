@@ -12,6 +12,8 @@ import { FooterComponent } from '../footer/footer.component';
 })
 
 export class HomeComponent {
+  baseHref = '/com.association.elleinad.web/';
+
   titlesDescription = ["Historique", "Vision", "Objectifs", "Cibles"]
   identifierDescription = ["historique", "vision", "objectifs", "cibles"]
   articlesDescription = [
