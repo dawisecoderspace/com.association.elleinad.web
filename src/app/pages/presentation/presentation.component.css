@@ -130,13 +130,12 @@ article ul li {
 }
 
 
-.groupement header {
-  background-image: url(/assets/photo-association.png);
+.groupement-header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 3 / 2;
 }
 
 
