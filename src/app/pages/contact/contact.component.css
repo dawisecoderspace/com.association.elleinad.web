@@ -25,7 +25,6 @@ header {
   padding-top: 230px;
   width: 100%;
   height: 100vh;
-  justify-items: center;
 }
 
 
@@ -35,6 +34,8 @@ form {
   gap: 1.5rem;
   width: 420px;
   margin-top: 17px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
