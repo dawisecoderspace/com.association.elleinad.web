@@ -8,12 +8,6 @@ export const routes: Routes = [{
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-}, { // provisoire -> pour GitHub
-    path: 'com.association.elleinad.web',
-    component: HomeComponent
-}, { // provisoire -> pour GitHub
-    path: 'com.association.elleinad.web/com.association.elleinad.web',
-    component: HomeComponent
 }, {
     path: 'home',
     component: HomeComponent

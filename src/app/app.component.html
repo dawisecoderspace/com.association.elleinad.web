@@ -36,16 +36,16 @@
     />
 
     <ul id="nav-burger" *ngIf="menuOuvert">
-        <a [routerLink]="['/home']" (click)="scrollToTop($event)">
+        <a [routerLink]="['/home']" (click)="scrollToTop($event); toggleMenu()">
             <li>Accueil</li>
         </a>
-        <a [routerLink]="['/presentation']" (click)="scrollToTop($event)">
+        <a [routerLink]="['/presentation']" (click)="scrollToTop($event); toggleMenu()">
             <li>Présentation</li>
         </a>
-        <a [routerLink]="['/presentation']" (click)="navigateToSection($event, 'associations')">
+        <a [routerLink]="['/presentation']" (click)="navigateToSection($event, 'associations'); toggleMenu()">
             <li>Activités</li>
         </a>
-        <a [routerLink]="['/contact']" (click)="scrollToTop($event)">
+        <a [routerLink]="['/contact']" (click)="scrollToTop($event); toggleMenu()">
             <li>Nous contacter</li>
         </a>
     </ul>
