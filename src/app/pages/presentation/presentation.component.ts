@@ -93,7 +93,8 @@ export class PresentationComponent {
       title: 'NDIAGANIAO',
       action: 'Autonomisation',
       params: `
-        <b>2005 - 2010</b> <br>
+        <b>2005 - 2010</b>
+        <br>
         <br>
         Microcrédit <br>
         Equipement en machine de presse huile <br>
