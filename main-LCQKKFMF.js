@@ -26,7 +26,8 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Achat de d\xE9cortiqueuse de Mil</i> <br>
         <i>Les femmes des 70 Village du CR</i>
       `},{class_name:"groupement",title:"NDIAGANIAO",action:"Autonomisation",params:`
-        <b>2005 - 2010</b> <br>
+        <b>2005 - 2010</b>
+        <br>
         <br>
         Microcr\xE9dit <br>
         Equipement en machine de presse huile <br>
