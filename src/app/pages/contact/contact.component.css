@@ -164,4 +164,20 @@ table tr td {
 
 
 @media only screen and (max-width: 580px) {
+  header {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  table tr .contact-contact {
+    min-width: none;
+  }
+
+  table tr td, table tr th {
+    font-size: 12px;
+  }
 }

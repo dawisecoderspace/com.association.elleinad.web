@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrl: './not-found.component.css'
 })
 export class NotFoundComponent {
-  countdown = 30;
+  countdown = 10;
   private intervalId: any;
 
   constructor(private router: Router) {}
