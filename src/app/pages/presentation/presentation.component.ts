@@ -11,6 +11,8 @@ import { FooterComponent } from '../footer/footer.component';
 })
 
 export class PresentationComponent {
+  baseHref = '/com.association.elleinad.web/';
+  
   articles = [
     {
       title: 'Association Elleinad Allo La Terre (AEAT)',

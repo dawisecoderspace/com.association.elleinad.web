@@ -35,6 +35,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "com.association.elleinad.web",
+              "outputHashing": "all",
               "budgets": [
                 {
                   "type": "initial",
@@ -46,8 +48,7 @@
                   "maximumWarning": "4kB",
                   "maximumError": "8kB"
                 }
-              ],
-              "outputHashing": "all"
+              ]
             },
             "development": {
               "optimization": false,

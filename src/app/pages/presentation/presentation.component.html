@@ -11,15 +11,17 @@
                 </ul>
             </article>
         </div>
-        <div id="right">
+        <!-- background-image pour production -->
+        <div id="right" [style.background-image]="'url(' + baseHref + 'assets/photo-principal.png)'">
             <h1 (click)="scrollToAssociation()">{{ displayedText }}</h1>
         </div>
     </div>
     
 
     <div id="associations">
+        <!-- background-image pour production -->
         <div *ngFor="let g of groupements" class="{{ g.class_name }}">
-            <header></header>
+            <header [style.background-image]="'url(' + baseHref + 'assets/photo-association.png)'"></header>
             <h1>{{ g.title }}</h1>
             <strong>{{ g.action }}</strong>
             <p [innerHTML]="g.params"></p>

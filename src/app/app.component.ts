@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  baseHref = '/com.association.elleinad.web/';
+  
   scrollToTop(event: Event) {
     event.preventDefault()
     window.scrollTo({ top: 0, behavior: 'smooth' });
