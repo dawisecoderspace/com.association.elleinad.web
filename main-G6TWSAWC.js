@@ -16,7 +16,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         notamment via la mise en place de fonds communautaires et de microcr\xE9dits.`,`<b>Renforcer la solidarit\xE9 f\xE9minine</b> \xE0 travers des r\xE9seaux de partage, de 
         valorisation des savoir-faire et des productions.`,`<b>Encourager l\u2019implication collective</b> dans la recherche de solutions durables aux 
         d\xE9fis du monde rural.`,`<b>Soutenir la jeunesse et l\u2019enfance</b> par l\u2019octroi de bourses d\u2019\xE9tudes, de formations, 
-        et d\u2019aides aux Dahras, orphelinats et pouponni\xE8res.`]},{title:"Nos B\xE9n\xE9ficiaires",paragraphs:["Nos actions s\u2019adressent prioritairement :"],listItems:["<b>Aux femmes en milieu rural et p\xE9riurbain</b>, confront\xE9es \xE0 un manque d\u2019infrastructures sociales de base.","Aux <b>jeunes</b>, soutenus \xE0 travers des bourses et de petites subventions.","Aux <b>enfants en situation difficile</b>, notamment dans les structures d\u2019accueil, avec un appui \xE0 l\u2019\xE9ducation et \xE0 la sant\xE9."]},{title:"Notre Engagement",paragraphs:["L\u2019AEAT s\u2019engage pour :"],listItems:["Un <b>leadership f\xE9minin fort</b> et valoris\xE9.","La <b>coop\xE9ration entre groupements de femmes (GIE)</b> dans un esprit de partenariat.","Une <b>solidarit\xE9 active</b> comme moteur de transformation sociale."]}];groupements=[{class_name:"groupement",title:"DIOHINE",action:"Autonomisation",params:`
+        et d\u2019aides aux Dahras, orphelinats et pouponni\xE8res.`]},{title:"Nos B\xE9n\xE9ficiaires",paragraphs:["Nos actions s\u2019adressent prioritairement :"],listItems:["<b>Aux femmes en milieu rural et p\xE9riurbain</b>, confront\xE9es \xE0 un manque d\u2019infrastructures sociales de base.","Aux <b>jeunes</b>, soutenus \xE0 travers des bourses et de petites subventions.","Aux <b>enfants en situation difficile</b>, notamment dans les structures d\u2019accueil, avec un appui \xE0 l\u2019\xE9ducation et \xE0 la sant\xE9."]},{title:"Notre Engagement",paragraphs:["L\u2019AEAT s\u2019engage pour :"],listItems:["Un <b>leadership f\xE9minin fort</b> et valoris\xE9.","La <b>coop\xE9ration entre groupements de femmes (GIE)</b> dans un esprit de partenariat.","Une <b>solidarit\xE9 active</b> comme moteur de transformation sociale."]}];groupements=[{class_name:"groupement",link:"assets/photo-association.png",title:"DIOHINE",action:"Autonomisation",params:`
         <b>2005 - 2012</b> <br>
         <br>
         Microcr\xE9dit <br>
@@ -25,7 +25,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Production agricole</i> <br> 
         <i>Achat de d\xE9cortiqueuse de Mil</i> <br>
         <i>Les femmes des 70 Village du CR</i>
-      `},{class_name:"groupement",title:"NDIAGANIAO",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"NDIAGANIAO",action:"Autonomisation",params:`
         <b>2005 - 2010</b>
         <br>
         <br>
@@ -38,7 +38,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Femmes des 34 villages du CR</i> <br>
         <i>Femmes de 3 villages : koulokk, keur cheikh, Sangu\xE9</i> <br>
         <i>Femmes de Ndiaganiao commune</i>
-      `},{class_name:"groupement",title:"NIORO",action:"Eau et environnement",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"NIORO",action:"Eau et environnement",params:`
         <b>2010 - 2013</b> <br>
         <br>
         Microcr\xE9dit <br>
@@ -49,7 +49,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Production et vente de petits ruminants</i> <br>
         <i>Production d\u2019oseille bio (Bissap Bio)</i> <br>
         <i>Lutte contre le ravinement des surfaces arables</i> (CJR)
-      `},{class_name:"groupement",title:"DIONEWAR",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"DIONEWAR",action:"Autonomisation",params:`
         <b>2007</b> <br>
         <br>
         Microcr\xE9dit <br>
@@ -62,7 +62,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Mandimo</i> <br>
         <i>Association des \xE9co guident</i> <br>
         <i>Interpole Guiss-guiss</i>
-      `},{class_name:"groupement",title:"CAP SKI RING",action:"Environnement",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"CAP SKI RING",action:"Environnement",params:`
         <b>2007</b> <br>
         <br>
         Campagnes de sensibilisation <br>
@@ -70,20 +70,20 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <br>
         <i>Protection de la mangrove</i> <br>
         <i>Association Jah Enab</i>
-      `},{class_name:"groupement",title:"NDIANDA",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-ndianda.png",title:"NDIANDA",action:"Autonomisation",params:`
         <b>2007</b> <br>
         <br>
         Microcr\xE9dit <br>
         <br>
         <i>Association les amies de Elleinad</i>
-      `},{class_name:"groupement",title:"JOAL",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"JOAL",action:"Autonomisation",params:`
         <b>2007</b> <br>
         <br>
         Microcr\xE9dit <br>
         <br>
         <i>Production de produits halieutiques</i> <br>
         <i>Association des femmes catholique de Joal</i>
-      `},{class_name:"groupement",title:"NORD FOIRE (DAKAR)",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"NORD FOIRE (DAKAR)",action:"Autonomisation",params:`
         <b>2008</b> <br>
         <br>
         Microcr\xE9dit <br>
@@ -91,7 +91,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <br>
         <i>Renforcement des capacit\xE9s des techniciennes</i> <br>
         <i>Association de femmes de la Cit\xE9 AELMAS</i>
-      `},{class_name:"groupement",title:"MBOUR",action:"(Appui) Associations",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"MBOUR",action:"(Appui) Associations",params:`
         2012 <br>
         <br>
         Initiatives culturelles pour les enfants d\xE9sh\xE9rit\xE9s <br>
@@ -99,7 +99,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Protection aux enfants d\xE9sh\xE9rit\xE9s</i> <br>
         <i>Association enfant du monde</i> <br>
         <i>Darha de l\u2019espoir</i>
-      `},{class_name:"groupement",title:"GRAND-DAKAR",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"GRAND-DAKAR",action:"Autonomisation",params:`
         <b>2012</b> <br>
         <br>
         Programme de lutte contre les violences <br>
@@ -111,7 +111,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Union des femmes de Grand-Dakar</i> <br>
         <i>Mouvement jeunesse et micro</i> <br>
         <i>Collectif des gargoti\xE8res de Grand-Dakar</i>
-      `},{class_name:"groupement",title:"YEUMBEUL NORD",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"YEUMBEUL NORD",action:"Autonomisation",params:`
         <b>2012</b> <br>
         <br>
         Microcr\xE9dit <br>
@@ -123,13 +123,13 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Club des amies de Danielle</i> <br>
         <i>GIE Teinture</i> <br>
         <i>R\xE9seau des GIE de Yeumbeul</i>
-      `},{class_name:"groupement",title:"HLM GRAND M\xC9DINE",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"HLM GRAND M\xC9DINE",action:"Autonomisation",params:`
         <b>2020</b> <br>
         <br>
         Microcr\xE9dit <br>
         <br>
         <i>Association And D\xE9ggo Ligueye</i>
-      `},{class_name:"groupement",title:"PIKINE",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"PIKINE",action:"Autonomisation",params:`
         <b>2010</b> <br>
         <br>
         Microcr\xE9dit <br>
@@ -137,13 +137,13 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Association des Jeunes Dames <br>
         pour la paix et la solidarit\xE9</i> <br>
         <i>Pikine khourou Naar</i>
-      `},{class_name:"groupement",title:"POTOU / THIEP",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"POTOU / THIEP",action:"Autonomisation",params:`
         <b>2012 - 2014</b> <br>
         Microcr\xE9dit <br>
         <br>
         <i>Femmes maraich\xE8res - Potou</i> <br>
         <i>Association de femmes mara\xEEch\xE8res</i> - Thiep
-      `},{class_name:"groupement",title:"THIES",action:"(Appui) Retour des \xE9migr\xE9s de Thi\xE8s",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"THIES",action:"(Appui) Retour des \xE9migr\xE9s de Thi\xE8s",params:`
         <b>2010</b> <br>
         Microcr\xE9dit <br>
         Achat de taxis <br>
@@ -152,7 +152,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <br>
         <i>\xC9migr\xE9s de retour</i> <br>
         <i>Association des femmes de Mbour3</i>
-      `},{class_name:"groupement",title:"PODOR / DAHRA DJOLOFF",action:"Autonomisation Encadrement technique",params:`
+      `},{class_name:"groupement",link:"assets/photo-association.png",title:"PODOR / DAHRA DJOLOFF",action:"Autonomisation Encadrement technique",params:`
         <b>2015</b> <br>
         <br>
         Microcr\xE9dit <br>
