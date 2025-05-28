@@ -75,6 +75,7 @@ export class PresentationComponent {
   groupements = [
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'DIOHINE',
       action: 'Autonomisation',
       params: `
@@ -90,6 +91,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'NDIAGANIAO',
       action: 'Autonomisation',
       params: `
@@ -109,6 +111,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'NIORO',
       action: 'Eau et environnement',
       params: `
@@ -126,6 +129,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'DIONEWAR',
       action: 'Autonomisation',
       params: `
@@ -145,6 +149,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'CAP SKI RING',
       action: 'Environnement',
       params: `
@@ -159,6 +164,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-ndianda.png",
       title: 'NDIANDA',
       action: 'Autonomisation',
       params: `
@@ -171,6 +177,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'JOAL',
       action: 'Autonomisation',
       params: `
@@ -184,6 +191,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'NORD FOIRE (DAKAR)',
       action: 'Autonomisation',
       params: `
@@ -198,6 +206,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'MBOUR',
       action: '(Appui) Associations',
       params: `
@@ -212,6 +221,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'GRAND-DAKAR',
       action: 'Autonomisation',
       params: `
@@ -230,6 +240,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'YEUMBEUL NORD',
       action: 'Autonomisation',
       params: `
@@ -248,6 +259,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'HLM GRAND MÉDINE',
       action: 'Autonomisation',
       params: `
@@ -260,6 +272,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'PIKINE',
       action: 'Autonomisation',
       params: `
@@ -274,6 +287,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'POTOU / THIEP',
       action: 'Autonomisation',
       params: `
@@ -286,6 +300,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'THIES',
       action: '(Appui) Retour des émigrés de Thiès',
       params: `
@@ -301,6 +316,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
+      link: "assets/photo-association.png",
       title: 'PODOR / DAHRA DJOLOFF',
       action: 'Autonomisation Encadrement technique',
       params: `
