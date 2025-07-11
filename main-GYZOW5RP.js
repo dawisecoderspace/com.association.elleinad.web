@@ -49,7 +49,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>Production et vente de petits ruminants</i> <br>
         <i>Production d\u2019oseille bio (Bissap Bio)</i> <br>
         <i>Lutte contre le ravinement des surfaces arables</i> (CJR)
-      `},{class_name:"groupement",link:"assets/photo-association.png",title:"DIONEWAR",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-dionewar.png",title:"DIONEWAR",action:"Autonomisation",params:`
         <b>2007</b> <br>
         <br>
         Microcr\xE9dit <br>
@@ -153,6 +153,14 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         <i>\xC9migr\xE9s de retour</i> <br>
         <i>Association des femmes de Mbour3</i>
       `},{class_name:"groupement",link:"assets/photo-association.png",title:"PODOR / DAHRA DJOLOFF",action:"Autonomisation Encadrement technique",params:`
+        <b>2015</b> <br>
+        <br>
+        Microcr\xE9dit <br>
+        Appui technique dans le cadre du d\xE9veloppement de la fili\xE8re des \xE9quid\xE9s <br>
+        <br>
+        <i>Association les amies de Elleinad</i> <br>
+        <i>Sos-Equid\xE9s</i>
+      `},{class_name:"groupement",link:"assets/photo-koulouck.png",title:"KOULOUCK WOLOF",action:"Autonomisation Encadrement technique",params:`
         <b>2015</b> <br>
         <br>
         Microcr\xE9dit <br>
