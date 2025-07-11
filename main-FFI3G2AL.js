@@ -76,7 +76,7 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
         Microcr\xE9dit <br>
         <br>
         <i>Association les amies de Elleinad</i>
-      `},{class_name:"groupement",link:"assets/photo-association.png",title:"JOAL",action:"Autonomisation",params:`
+      `},{class_name:"groupement",link:"assets/photo-joal.png",title:"JOAL",action:"Autonomisation",params:`
         <b>2007</b> <br>
         <br>
         Microcr\xE9dit <br>
