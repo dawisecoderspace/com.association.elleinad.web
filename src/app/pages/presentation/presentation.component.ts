@@ -177,7 +177,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
-      link: "assets/photo-association.png",
+      link: "assets/photo-joal.png",
       title: 'JOAL',
       action: 'Autonomisation',
       params: `
