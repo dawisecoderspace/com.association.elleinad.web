@@ -129,7 +129,7 @@ export class PresentationComponent {
     },
     {
       class_name: 'groupement',
-      link: "assets/photo-association.png",
+      link: "assets/photo-dionewar.png",
       title: 'DIONEWAR',
       action: 'Autonomisation',
       params: `
@@ -318,6 +318,21 @@ export class PresentationComponent {
       class_name: 'groupement',
       link: "assets/photo-association.png",
       title: 'PODOR / DAHRA DJOLOFF',
+      action: 'Autonomisation Encadrement technique',
+      params: `
+        <b>2015</b> <br>
+        <br>
+        Microcrédit <br>
+        Appui technique dans le cadre du développement de la filière des équidés <br>
+        <br>
+        <i>Association les amies de Elleinad</i> <br>
+        <i>Sos-Equidés</i>
+      ` 
+    },
+    {
+      class_name: 'groupement',
+      link: "assets/photo-koulouck.png",
+      title: 'KOULOUCK WOLOF',
       action: 'Autonomisation Encadrement technique',
       params: `
         <b>2015</b> <br>
